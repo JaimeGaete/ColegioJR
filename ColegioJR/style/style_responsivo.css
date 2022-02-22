@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body
+{
+    font-family: 'Pangolin';
+}
+
+h4 {
+    background-color: dimgrey;
+    text-align: right;
+    color:blanchedalmond;
+    font-weight: 20;
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+/* NAV */
+.nav {
+    background-color:orangered;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav__logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav__links {
+    list-style: none;
+    display:inline-flexbox;
+}
+
+.nav__item {
+    display:inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: blanchedalmond;
+    margin-left: 20px;
+}
+
+.nav__link--active {
+    font-weight:900;
+}
+
+/* CONTENEDOR */
+.gridResponsive {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "caja-1 caja-1 caja-1 caja-1"
+    "caja-2 caja-2 caja-2 caja-2"
+    "caja-3 caja-3 caja-3 caja-3"
+    "caja-4 caja-5 caja-6 caja-7"
+    "caja-8 caja-8 caja-8 caja-8"
+    "caja-9 caja-9 caja-9 caja-9";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridResponsive__caja {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.gridResponsive__caja--1 {
+    grid-area: caja-1;
+}
+
+.gridResponsive__caja--2 {
+    grid-area: caja-2;
+}
+
+.gridResponsive__caja--3 {
+    grid-area: caja-3;
+    background:coral;
+}
+
+.gridResponsive__caja--4 {
+    grid-area: caja-4;
+    background:snow;
+    text-align: left;
+    border:tomato 1px solid;
+}
+
+.gridResponsive__caja--5 {
+    grid-area: caja-5;
+    background:snow;
+    text-align: left;
+    border:tomato 1px solid;
+}
+
+.gridResponsive__caja--6 {
+    grid-area: caja-6;
+    background:snow;
+    text-align: left;
+    border:tomato 1px solid;
+}
+
+.gridResponsive__caja--7 {
+    grid-area: caja-7;
+    background:snow;
+    text-align: left;
+    border:tomato 1px solid;
+}
+
+.gridResponsive__caja--8 {
+    grid-area: caja-8;
+    background:coral;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gridResponsive__caja--9 {
+    grid-area: caja-9;
+}
+
+@media screen and (max-width: 1200px) { 
+    .gridResponsive {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-1 caja-1 caja-1"
+        "caja-2 caja-2 caja-2"
+        "caja-3 caja-3 caja-3"
+        "caja-4 caja-5 caja-6";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .gridResponsive__caja--7 {
+        grid-area: caja-7;
+        visibility: hidden;
+    }
+    .gridResponsive__caja--8 {
+        grid-area: caja-8;
+        visibility: hidden;
+    }
+    .gridResponsive__caja--9 {
+        grid-area: caja-9;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-2 caja-2"
+        "caja-3 caja-3"
+        "caja-4 caja-5";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        }
+        .gridResponsive__caja--8 {
+            grid-area: caja-8;
+            visibility: hidden;
+        }
+        .gridResponsive__caja--9 {
+            grid-area: caja-9;
+            visibility: hidden;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .gridResponsive {
+        grid-template-areas: 
+        "caja-1"
+        "caja-2"
+        "caja-3"
+        "caja-4"
+        "caja-5"
+        "caja-6";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .gridResponsive__caja--8 {
+        grid-area: caja-8;
+        visibility: hidden;
+    }
+    .gridResponsive__caja--9 {
+        grid-area: caja-9;
+        visibility: hidden;
+    }
+}
+
+/* H1 */
+.section h1 {
+    text-align: left;
+    color:blanchedalmond;
+    font-weight: 400;
+    font-size:xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.section h2 {
+    background-color: dimgrey;
+    text-align: left;
+    color:blanchedalmond;
+    font-weight: 20;
+    font-size:x-large;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
