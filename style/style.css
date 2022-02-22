@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body
+{
+    font-family: 'Pangolin';
+}
+
+h4 {
+    background-color: dimgrey;
+    text-align: right;
+    color:blanchedalmond;
+    font-weight: 20;
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+/* NAV */
+.nav {
+    background-color:orangered;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav__logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav__links {
+    list-style: none;
+    display:inline-flexbox;
+}
+
+.nav__item {
+    display:inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: blanchedalmond;
+    margin-left: 20px;
+}
+
+.nav__link--active {
+    font-weight:900;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+}
+
+.contenedor__titulo {
+    background:coral;
+    text-align: left;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 5;
+  }
+  
+.contenedor__noticia1 {
+    background:snow;
+    text-align: left;
+    border:tomato 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedor__video
+{
+    background:coral;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* H1 */
+.section h1 {
+    text-align: left;
+    color:blanchedalmond;
+    font-weight: 400;
+    font-size:xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.section h2 {
+    background-color: dimgrey;
+    text-align: left;
+    color:blanchedalmond;
+    font-weight: 20;
+    font-size:x-large;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+.footer {
+    padding-top: 100px;
+}
+
